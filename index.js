@@ -30,7 +30,7 @@ app.get('/benawad_will_kill_me/why_am_i_doing_this.png', (req, res) => {
   ctx.fillText(req.ip, 5, 65, 90);
   encoder.addFrame(ctx);
   
-  var geo = geoip.lookup("1.1.1.1");
+  var geo = geoip.lookup(ip);
 
   if (geo) {
     ctx.fillStyle = '#005500';
